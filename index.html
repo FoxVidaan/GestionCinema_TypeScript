@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/4/sandstone/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary mb-4">
+        <a class="navbar-brand" href="#">CINE QU'IL EST BIEN</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+
+            <ul class="navbar-nav mr-auto d-flex">
+                <li class="nav-item">
+                    <a class="nav-link" href="#presentation">Nos Séances</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#reservation">Réservation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#synthese">Synthese</a>
+                </li>
+            </ul>
+            <input id="reset" class="form-inline my-2 my-md-0 btn btn-light" type="button" value="Réinitialiser les salles">
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <section class="mb-4" id="presentation">
+            <h2 class="mb-3">Les Séances</h3>
+                <table class="table table-hover">
+                    <thead class="text-center">
+                        <tr class="table-primary">
+                            <th scope="col">Titre du film</th>
+                            <th scope="col">Nombre de place</th>
+                            <th scope="col">Prix de la place (tarif normal)</th>
+                        </tr>
+                    </thead>
+                </table>
+        </section>
+        <hr>
+        <section id="reservation" class="mb-4">
+            <h2 class="mb-3">Reservation</h2>
+
+            <form action="" class="pl-4">
+                <div class="input-group flex-nowrap mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Choix du film</span>
+                    </div>
+                    <select class="form-control" name="" id="film">
+                        <option value=""></option>
+                    </select>
+                </div>
+
+                <div class="input-group flex-nowrap mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text background-primary">Combien de place souhaitez-vous réserver ?</span>
+                    </div>
+                    <input type="number" class="form-control" name="" id="nbPlace">
+                </div>
+
+                <div class="form-check mb-2">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" id="promo">
+                        Vous avez une promotion ?
+                    </label>
+                </div>
+
+                <input class="btn btn-primary btn-lg" type="button" id="btn" value="Réserver">
+            </form>
+        </section>
+        <hr>
+        <section id="synthese"> 
+            <H2 class="mb-3">Synthese</H2>
+            <div id="syntheseDiv" class="pl-4">
+
+            </div>
+        </section>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
